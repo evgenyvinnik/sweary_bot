@@ -20,7 +20,6 @@ namespace SwearyBot
                 .UseStartup<Startup>()
                 .Build();
 
-
         public static List<Swear> Swears { get; set; }
     }
 }

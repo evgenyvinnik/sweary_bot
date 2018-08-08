@@ -1,10 +1,10 @@
 ﻿[
-{
-  "Type": "Phrase",
-  "SwearPhrase": "Блять!"
-},
-{
-  "Type": "Phrase",
-  "SwearPhrase": "Да нахуй!"
-}
+  {
+    "Type": "Phrase",
+    "SwearPhrase": "Блять!"
+  },
+  {
+    "Type": "Phrase",
+    "SwearPhrase": "Да нахуй!"
+  }
 ]
