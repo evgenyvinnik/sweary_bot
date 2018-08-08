@@ -1,14 +1,15 @@
 {
-  "name": "SwearyBot",
-  "secretKey": "",
-  "services": [
-    {
-      "appId": "",
-      "id": "http://localhost:3978/api/messages",
-      "type": "endpoint",
-      "appPassword": "",
-      "endpoint": "http://localhost:3978/api/messages",
-      "name": "SwearyBot"
-    }
-  ]
+    "name": "SwearyBot",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "id": "http://localhost:3978/api/messages",
+            "name": "SwearyBot",
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://swearybot.azurewebsites.net/api/messages"
+        }
+    ]
 }

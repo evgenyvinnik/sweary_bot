@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.Bot;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
@@ -8,6 +9,8 @@ namespace SwearyBot
 {
     public class EchoBot : IBot
     {
+        static Random rnd = new Random();
+
         /// <summary>
         /// Every Conversation turn for our EchoBot will call this method. In here
         /// the bot checks the Activty type to verify it's a message, bumps the 
@@ -28,7 +31,7 @@ namespace SwearyBot
                 state.TurnCount++;
 
                 // Echo back to the user whatever they typed.
-                await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
+                await context.SendActivity($"{Program.Swears[rnd.Next(Program.Swears.Count)].SwearPhrase}");
             }
         }
     }    
